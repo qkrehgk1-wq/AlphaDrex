@@ -1,0 +1,27 @@
+{
+  "build_id": "08cdb2418e89b00cddfc8cda7c8955274c79c742aecc021026547a7414cf4f95",
+  "zip_sha256": "06c0e271c10a685cf065e4054f2fe11b02049c992b2959d2da4a98d35ff2fe11",
+  "duration": 39.28,
+  "video_sha256": "3afc696e278c36ecafe369a928b03c569fc616466c754cddafd40f6d2be2a527",
+  "decision": "Liner 실제 판단",
+  "checks": {
+    "real_judge": true,
+    "real_draft": true,
+    "approved_evidence": true,
+    "consent": true
+  },
+  "evidence_lines": 1,
+  "reply_received": true,
+  "judge_calls": 1,
+  "draft_calls": 1,
+  "search_calls": 0,
+  "requested_model": "liner-gpt-router",
+  "judge_returned_model": "gpt-6-sol",
+  "draft_returned_model": "gpt-6-sol",
+  "total_ms": 8295.11,
+  "full_video_decode": true,
+  "source": "real browser recording",
+  "fixture": "fictional",
+  "network_mode": "external",
+  "consent": true
+}

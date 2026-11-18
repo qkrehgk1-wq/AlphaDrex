@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "가상·시연용-행사준비.md",
+    "title": "가상 행사장 준비·종료 매뉴얼",
+    "kind": "가상·시연용",
+    "publisher": "AlphaDrex 창작",
+    "date": "2026-11-13",
+    "license": "프로젝트 자체 작성",
+    "audience": "가상 해솔 문화관 현장 담당자",
+    "freshness": "시연용"
+  },
+  {
+    "filename": "가상·시연용-교대인계.md",
+    "title": "가상 교대 인계·미결 처리 매뉴얼",
+    "kind": "가상·시연용",
+    "publisher": "AlphaDrex 창작",
+    "date": "2026-11-13",
+    "license": "프로젝트 자체 작성",
+    "audience": "가상 해솔 문화관 현장 담당자",
+    "freshness": "시연용"
+  },
+  {
+    "filename": "가상·시연용-현장점검표.md",
+    "title": "가상 시설 순회·기록 매뉴얼",
+    "kind": "가상·시연용",
+    "publisher": "AlphaDrex 창작",
+    "date": "2026-11-13",
+    "license": "프로젝트 자체 작성",
+    "audience": "가상 해솔 문화관 현장 담당자",
+    "freshness": "시연용"
+  }
+]

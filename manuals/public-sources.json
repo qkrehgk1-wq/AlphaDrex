@@ -1,0 +1,34 @@
+[
+  {
+    "id": "mois-earthquake",
+    "title": "지진 국민행동요령(소책자)",
+    "publisher": "행정안전부",
+    "date": "2024-12-30",
+    "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000015&nttId=114774",
+    "checked": "2026-11-12",
+    "audience": "일반 국민",
+    "format": "PDF",
+    "download": "Python HTTPS 다운로드 성공. 원본은 artifacts에 보관, 재배포 ZIP 제외",
+    "license": "문서별 사용·재배포 조건 미확인",
+    "freshness": "게시물 확인 완료, 최신 개정판 여부 미확인",
+    "content_status": "PDF 52쪽 텍스트 로컬 추출 완료 · 공공누리 표시 미확인으로 검색 등록 보류",
+    "download_url": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00132982UTRXgTq&fileSn=0",
+    "sha256": "dcb11c47b22068539fcf10bf2e8f712f8f6bbe35d481f5fbc553523b5e85eb14",
+    "bytes": 12485597
+  },
+  {
+    "id": "mois-elevator",
+    "title": "승강기 국민행동요령 포스터",
+    "publisher": "행정안전부",
+    "date": "2025-05-15",
+    "url": "https://www.mois.go.kr/frt/bbs/type002/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000530&nttId=117746",
+    "checked": "2026-11-12",
+    "audience": "일반 국민",
+    "format": "JPG 및 웹 대체 텍스트",
+    "download": "공식 JPG 첨부 링크 확인, 원본 이미지 미다운로드",
+    "license": "문서별 사용·재배포 조건 미확인",
+    "freshness": "게시물 확인 완료, 최신 개정판 여부 미확인",
+    "content_status": "웹 대체 텍스트 일부 확인 · 공공누리 표시 미확인으로 검색 등록 보류",
+    "location": "게시물 이미지 대체 텍스트 항목 2"
+  }
+]
