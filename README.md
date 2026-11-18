@@ -91,6 +91,14 @@ python -m unittest discover -s tests
 
 프로젝트는 2026-11-12에 시작했으며 AI 코딩 도구를 활용해 개발했습니다. 로컬 Drex 모델은 Nace.AI의 공개 배포 모델을 사용자가 별도로 준비하는 방식입니다. AlphaDrex는 Nace.AI와 독립적으로 개발한 응용 프로그램입니다.
 
+| 구분 | 범위와 출처 |
+|---|---|
+| 11/12 이전의 자체 제품 코드 | 개발 기록상 빈 폴더에서 시작 |
+| 11/12~19 신규 개발 | 웹앱, Liner 어댑터, 매뉴얼 근거 처리, 문서화·검토·에이전트 전달, 계정·백업, 시험과 가상 매뉴얼 |
+| 외부 모델·런타임 | Nace.AI Drex v1.5와 Nace llama.cpp fork. 설치·출처는 아래 Drex 안내 참고 |
+| 외부 서비스·라이브러리 | Liner Model/Search API, Python·SQLite·브라우저, 선택 PDF 추출 도구 pypdf |
+| 공개 자료 재구성 | 폭염·호우 참고 매뉴얼의 원출처와 이용 조건은 각 문서 및 출처 목록에 기재 |
+
 - [로컬 Drex 설치 안내](docs/DREX.md)
 - [문서화·에이전트 연동 안내](docs/AGENT_HANDOFF.md)
 - [가상·공개 자료 출처 목록](manuals/public-sources.json)
