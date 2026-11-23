@@ -870,11 +870,29 @@ class Engine:
         elif result['needs_info']:
             status = '추가 정보 필요'
         draft_result = None
-        draft_status = '내부망: 자연어 초안 사용 불가' if self.policy['mode'] == 'internal' else '외부 전송 확인 또는 설정 필요'
-        model_ms = None
-        model_calls = 0
+        # Say why a draft is absent. One message for every reason ('외부 전송 확인 또는 설정 필요')
+        # described neither a document conflict nor an emergency, so a reader could think the only
+        # missing step was a setting (found 2026-11-23 while re-checking the contest build).
         if result['needs_info']:
             draft_status = '추가 정보를 확인한 뒤 초안을 작성할 수 있습니다'
+        elif self.policy['mode'] == 'internal':
+            draft_status = '내부망: 자연어 초안 사용 불가'
+        elif not evidence:
+            draft_status = '근거 부족: 등록 매뉴얼에서 근거를 찾지 못해 초안을 만들지 않습니다'
+        elif result['emergency']:
+            draft_status = '긴급 상황 의심: AI 초안보다 기관 긴급 절차와 지휘 체계를 먼저 확인하세요'
+        elif conflict:
+            draft_status = '문서 충돌: 기준을 임의로 고르지 않습니다. 담당자가 기준 문서를 정한 뒤 작성합니다'
+        elif result.get('risk_word'):
+            draft_status = '위험 단어 검토 중: 담당자 확인 전에는 초안을 만들지 않습니다'
+        elif not allow_external:
+            draft_status = '공개·가상 입력 확인 전: 질문마다 외부 전송 동의가 필요합니다'
+        elif not self.policy['external_enabled']:
+            draft_status = '외부 전송이 꺼져 있습니다. 설정에서 허용한 뒤 초안을 요청하세요'
+        else:
+            draft_status = '외부 전송 확인 또는 설정 필요'
+        model_ms = None
+        model_calls = 0
         if evidence and not conflict and not result['emergency'] and not result.get('risk_word') and not result['needs_info'] and allow_external and self.policy['mode'] == 'external' and self.policy['external_enabled']:
             t = time.perf_counter()
             try:
